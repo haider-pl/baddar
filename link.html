@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Lovers - Links</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        .links-section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .links-section h2 {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .link-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Form Styling */
+        .feedback-section {
+            background-color: #fff;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        form button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Useful Links</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Cars</a>
+        <a href="link.html">Links</a>
+    </nav>
+    
+    <main>
+        <section class="links-section">
+            <h2>Social Media Links</h2>
+            <ul class="link-list">
+                <li><a href="https://www.instagram.com/porsche/" target="_blank">Instagram</a></li>
+                <li><a href="https://x.com/porsche?lang=ar" target="_blank">Twitter</a></li>
+                <li><a href="https://www.facebook.com/porsche/" target="_blank">Facebook</a></li>
+            </ul>
+        </section>
+
+        <section class="links-section">
+            <h2>YouTube Car Reviews</h2>
+            <ul class="link-list">
+                <li><a href="https://www.youtube.com/watch?v=O2tZ_jBPeoI" target="_blank">Porsche 911 Turbo S Review</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ct30rm78cEA" target="_blank">Porsche Taycan Review</a></li>
+                <li><a href="https://www.youtube.com/watch?v=LoRzVe0cIWM" target="_blank">Porsche 718 Cayman GT4 Review</a></li>
+                <li><a href="https://www.youtube.com/watch?v=lbuWj85y9vo" target="_blank">Porsche Macan Turbo Review</a></li>
+                <li><a href="https://www.youtube.com/watch?v=ceb2f_U-i2s" target="_blank">Porsche Panamera Turbo Review</a></li>
+                <li><a href="https://www.youtube.com/watch?v=NYifTXGwCOM" target="_blank">Porsche Cayenne S Review</a></li>
+                <li><a href="https://www.youtube.com/watch?v=fbLvSsh2E4o" target="_blank">Porsche Carrera GT Review</a></li>
+            </ul>
+        </section>
+
+        <!-- New Form Section -->
+        <section class="feedback-section">
+            <h2>Submit Your Feedback</h2>
+            <form action="submit_feedback.php" method="POST">
+                <label for="brand">Car Brand:</label>
+                <input type="text" id="brand" name="brand" placeholder="e.g., Porsche" required>
+
+                <label for="model">Model Number:</label>
+                <input type="text" id="model" name="model" placeholder="e.g., 911 Turbo S" required>
+
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" placeholder="e.g., Red" required>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Enter your feedback here" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Porsche Lovers - Badr Nasser</p>
+    </footer>
+</body>
+</html>
